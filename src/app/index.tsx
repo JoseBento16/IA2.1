@@ -9,10 +9,10 @@ export default function HomeScreen(){
             <View style={styles.container}>
                 <View style={styles.headerContainer}>
                     <Text style={styles.logo}>DevCard</Text>
-                    <Text style={styles.subtitle}>Seu cartao de visita digital de dev</Text>
+                    <Text style={styles.subtitle}>Seu cartão de visita digital de dev</Text>
                 </View>
 
-                <Button label="Criar meu cartao" />
+                <Button label="Criar meu cartão" />
                 
             </View>
         </SafeAreaView>
