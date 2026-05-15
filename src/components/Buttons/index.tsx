@@ -3,13 +3,14 @@ import { styles } from "./styles";
 
 type Props = {
     label: string,
+    variant?: "primary" | "secondary" | "outline",
     onPress?: (event: GestureResponderEvent) => void
 }
 
-export function Button({ label, onPress }: Props){
+export function Button({ label, variant = "primary", onPress }: Props){
     return (
-            <TouchableOpacity onPress={onPress} style={styles.buttonContainer}>
-                <Text style={styles.buttonText}>{label}</Text>
+            <TouchableOpacity onPress={onPress} style={styles[variant].buttonContainer}>
+                <Text style={styles[variant].buttonText}>{label}</Text>
             </TouchableOpacity>
     )
 }
