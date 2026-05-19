@@ -12,7 +12,6 @@ export default function PreviewScreen() {
   const params = useLocalSearchParams();
   const { nome, cargo, empresa, anos, tecnologia, cor } = params;
 
-  // Lógica condicional obrigatória de Níveis por Experiência
   const calcularNivel = () => {
     const exp = Number(anos) || 0;
     if (exp <= 2) return { nivel: "Júnior", corBadge: "#9CA3AF" };
